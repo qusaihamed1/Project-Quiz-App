@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+   <div class="container">
+    <div class="first">
+        <div id="p-first">Welcome To Quiz App!</div>
+        <div id="pickup">
+            <div>Pick a question type to start</div>
+            <div id="pic"><img src="./images/picture-main.png" alt=""></div>
+        </div>
+    </div>
+    <div class="span"></div>
+    
+    <div id="quiz">
+        <button id="gen" onclick="loadQuestions('General Knowledge')"><span>General Knowledge</span></button>
+        <button id="sc" onclick="loadQuestions('Science & Nature')"><span>Science & Nature</span></button>
+        <button id="sp" onclick="loadQuestions('Sports')"><span>Sports</span></button>
+        <button id="his" onclick="loadQuestions('History')"><span>History</span></button>
+        <button id="geo" onclick="loadQuestions('Geography')"><span>Geography</span></button>
+        <button id="film" onclick="loadQuestions('Entertainment: Film')"><span>Films</span></button>
+    </div>
+</div>
+
+    
+    <script src="./JS/quiz.js"></script>
+</body>
+
+</html>

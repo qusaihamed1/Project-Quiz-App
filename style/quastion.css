@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+
+#picc {
+    position: fixed;
+    right: 10%; 
+    top: 200px; 
+}
+
+#picc img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+}
+
+.span {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 0;
+    border-color: transparent #0D92F4 transparent transparent;
+    position: absolute; 
+    top: 0;
+    right: 0; 
+}
+
+.span2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 0 0 100px;
+    border-color: transparent transparent transparent #0D92F4;
+    position: absolute;
+    bottom: 0;
+    left: 0;   
+}
+
+.quiz-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8%;
+    width: 90%;
+    max-width: 450px; 
+    text-align: center;
+    height: auto;
+    box-sizing: border-box; 
+    position: relative; 
+    z-index: 1; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#numofQuestions {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+#questions-Cont h3 {
+    word-spacing: -1px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.header #numofQuestions {
+    margin-bottom: -5px;
+    font-family: cursive;
+    color: #007bff;
+    border-radius: 20%;
+    background-color: #e0f7fa;
+    padding: 10px;
+}
+
+#timer {
+    width: 60px;
+    height: 60px;
+    border-radius: 46%;
+    background-color: #e0f7fa;
+    font-size: 25px;
+    color: #007bff;
+    font-family: emoji;
+}
+
+.header #timer {
+    margin-bottom: -5px;
+}
+
+#categoryName {
+    border-radius: 12px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 3.2px solid #6eaaea;
+}
+
+#questions-Cont {
+    text-align: left;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+input {
+    margin-right: 10px;
+}
+
+label:hover {
+    background-color: #FEFF9F;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button.hidden {
+    display: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.correct-answer {
+    border: 2px solid green;
+}
+
+.incorrect-answer {
+    border: 2px solid red;
+}
